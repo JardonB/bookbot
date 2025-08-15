@@ -8,11 +8,7 @@ def get_book_text(file_path):     #as described; gets the text of the book from 
         file_contents = f.read()  #reads contents of f to file_contents
     return file_contents
 
-def number_of_words(input_text):  #determines the number of words in input_text string
-    words = input_text.split()    #splits input_text into words
-    count = 0
-    for word in words:            #iterates over words and increments the count
-        count += 1
-    return count
+def number_of_words(input_text):   #determines the number of words in input_text string
+    return len(input_text.split()) #split input_text and return the length
 
 main()
