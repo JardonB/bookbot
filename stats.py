@@ -14,3 +14,12 @@ def character_count(input_text):    #counts characters in input_text
         else:
             characters[char] = 1
     return characters
+
+def sort_on(items):
+    return items["num"]
+
+def dict_to_list(input_dict):
+    new_list = []
+    for entry in input_dict:
+        new_list.append({"char": entry, "num": input_dict[entry]})
+    return new_list
